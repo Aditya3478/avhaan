@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+
+    <!-- External CSS and Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <style>
+
+
+    .contact {
+      padding: 40px 15px;
+    }
+
+    .row {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+    }
+
+    .form-group label {
+      font-size: 1.8rem;
+    }
+
+    .form-group input {
+        font-size: 1.6rem;
+    }
+
+    .captcha-container {
+      background-color: #f1f5f8;
+      border-left: 4px solid #129652;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-size: 1.8rem;
+    }
+
+    #captchaText {
+      color: #129652;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 4px;
+
+    }
+
+    .refresh-btn {
+      background-color: #129652;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .refresh-btn:hover {
+      background-color: #0f7f44;
+    }
+
+    .btn-success {
+      background-color: #129652;
+      font-size: 1.6rem;
+      border: none;
+    }
+
+    .btn-success:hover {
+      background-color: #0f7f44;
+    }
+
+    .card {
+      border: none;
+      font-size: 1.6rem;
+      background: linear-gradient(to top left, #e8fce7, #ffffff);
+    }
+
+    .color{
+        font-size: 1.8rem;
+        color: deeppink;
+    }
+
+    .form-control{
+        font-size: 1.6rem;
+    }
+
+  </style>
+</head>
+<body>
+    <!--Navbar section start here-->
+    <section class="">
+        <section class="head">
+            <div><a href="./link.html" class="link">Website Link</a></div>
+            <div><p><i class="fa-solid fa-envelope" style="color: #f20c0f;"></i><a>Email: editor@avhaan.com</a></p></div>
+            <div><p><i class="fa-solid fa-phone" style="color: #0055ff;"></i><a>Contact No.: +91 87684 32456</a></p></div>
+        </section>
+
+        <section class="nimid">
+            <div class="title-logo">
+                <div class="text">
+                    <h2><span class="tag">N</span>ational </h2>
+                    <h2><span class="tag">I</span>nstitute of</h2> 
+                    <h2><span class="tag">M</span>otivational and</h2> 
+                    <h2><span class="tag">I</span>nstitutional</h2>
+                    <h2><span class="tag">D</span>evelopment</h2>
+                </div>
+
+                <div class="logo">
+                    <img src="./Img/2-removebg-preview.png" alt="logo">
+                </div>
+            
+                <div class="secondary-logo">
+                    <img src="./Img/3-removebg-preview.png" alt="logo1">
+                </div>
+            </div>
+        </section>
+
+            <nav class="navbar d-flex justify-content-center">
+                <div class="toggle-btn" onclick="toggleNavbar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links" id="navLinks">
+                <a href="./Home.html">Home</a>
+                <a href="./aboutUs.html">About Us</a>
+                <a href="./contactUs.html">Contact Us</a>
+                </div>
+            </nav>
+    </section>
+
+    <!--Home section start here-->
+     <section class="sub-nav">
+        <div class="Avahaan1">
+                <div class="magazine1">
+                    <a href="sutra.html">व्यवस्थापनातील सूत्र</a>
+                    <a href="manogat.html">मनोगत</a>
+                    <a href="startup.html">स्टार्टअप विचार</a>
+                    <a href="aanya.html">आज्ञापत्र</a>
+                    <a href="vishesh.html">विशेष लेख</a>
+                    <a href="yashasviudyojak.html"> यशस्वी उद्योजक</a>
+                    <a href="aadhunik.html">आधुनिक उपकरणे आणि आपण</a>
+                    <a href="vyavsthapna.html">व्यवस्थापनातील छोटासा बदल</a>
+                    <a href="sihavlokan.html">सिंहावलोकन</a>
+                    <a href="sad.html">साद-प्रतिसाद</a>
+                    <a href="shevtchapan.html">शेवटचा पान वहीचं</a>
+                </div>
+
+          
+            <!-- Main Content -->
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" class="form-control" id="name" name="user_name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" class="form-control" id="email" name="user_email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number *</label>
+                        <input type="tel" class="form-control" id="phone" name="user_phone" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Captcha -->
+                    <div class="captcha-container">
+                        <label for="captchaInput">Enter the text: <span id="captchaText">AB123</span></label>
+                        <input type="text" id="captchaInput" class="form-control mt-2" required />
+                        <button type="button" class="refresh-btn mt-2" onclick="generateCaptcha()">↻ Refresh</button>
+                        <div class="form-check mt-2 text-left">
+                        <input type="checkbox" class="form-check-input" id="consent" required>
+                        <label class="form-check-label" for="consent">I agree to the terms and privacy policy</label>
+                        </div>
+                        <p id="result" class="mt-2"></p>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success mt-3">Send Message</button>
+                    </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="color">Get in Touch</h2>
+                        <p class="card-text">For any inquiries, feel free to contact us at:</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nostrum repellendus sint totam distinctio cupiditate, quod, nisi nemo veniam ad delectus molestias animi, odio earum voluptates minus dolores consequuntur quibusdam. Esse placeat magni alias corporis natus illum facilis harum, omnis molestias, officiis consequatur officia quibusdam soluta eius, iure explicabo inventore.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+                <div class="AM2">
+                    <a href="./udyogibharari.html">उद्योगभरारी</a>
+                    <a href="./yashvant.html">यशवंत</a>
+                    <a href="./aajchaAI.html">AI प्रणाली / Article</a>
+                    <a href="./AI-articles.html">AI Video</a>
+                    <a href="./sidhant.html">सिद्धांत</a>
+                    <a href="./udyojika.html">उमेद उद्योगिनी</a>
+                    <a href="./udyogparv.html">पुस्तकपरिचय </a>
+                    <a href="./gbn.html">GBN आर्काईव्ह</a>
+                    <a href="./prerna.html">प्रेरणा </a>
+                    <a href="./atithi.html">अतिथी</a>
+                </div>
+        </div>
+    </section>
+    
+    <!--Footer section start here-->
+    <footer class="footer">
+    <div class="footer-content">
+        <p>Copyright All Rights Reserved for Avhaan.</p>
+
+        <nav class="footer-nav">
+        <a href="Home.html">Home</a> |
+        <a href="aboutUs.html">About Us</a> |
+        <a href="contactUs.html">Contact Us</a> 
+        </nav>
+
+        <div class="social-icons">
+            <span>Follow us:</span>
+            <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </footer>
+
+  <!-- JavaScript -->
+  <script>
+    emailjs.init("vLAbRDuVKxKGcEayj");
+
+    const captchaTextEl = document.getElementById("captchaText");
+    const captchaInput = document.getElementById("captchaInput");
+    const contactForm = document.getElementById("contactForm");
+    const resultEl = document.getElementById("result");
+    let currentCaptcha = "";
+
+    function generateCaptcha() {
+      const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+      let captcha = "";
+      for (let i = 0; i < 6; i++) {
+        captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      currentCaptcha = captcha;
+      captchaTextEl.textContent = captcha;
+      captchaInput.value = "";
+      resultEl.textContent = "";
+    }
+
+    window.onload = generateCaptcha;
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (captchaInput.value.toUpperCase() !== currentCaptcha) {
+        resultEl.textContent = "❌ Incorrect CAPTCHA. Try again.";
+        resultEl.style.color = "red";
+        generateCaptcha();
+        return;
+      }
+
+      resultEl.textContent = "✅ CAPTCHA passed.";
+      resultEl.style.color = "green";
+
+      emailjs.sendForm("service_zt5v934", "template_adb4h78", this)
+        .then(() => {
+          alert("✅ Message sent successfully!");
+          contactForm.reset();
+          generateCaptcha();
+        })
+        .catch((error) => {
+          alert("❌ Failed to send message.");
+          console.error("EmailJS Error:", error);
+        });
+    });
+  </script>
+</body>
+</html>

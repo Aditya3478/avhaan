@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--Navbar section start here-->
+        <section class="nav">
+            <section class="head">
+                <div><a href="./link.html" class="link">Website Link</a></div>
+                <div><p><i class="fa-solid fa-envelope" style="color: #f20c0f;"></i><a>Email: editor@avhaan.com</a></p></div>
+                <div><p><i class="fa-solid fa-phone" style="color: #0055ff;"></i><a>Contact No.: +91 87684 32456</a></p></div>
+            </section>
+
+            <section class="nimid">
+                <div class="title-logo">
+                    <div class="text">
+                        <h2><span class="tag">N</span>ational </h2>
+                        <h2><span class="tag">I</span>nstitute of</h2> 
+                        <h2><span class="tag">M</span>otivational and</h2> 
+                        <h2><span class="tag">I</span>nstitutional</h2>
+                        <h2><span class="tag">D</span>evelopment</h2>
+                    </div>
+
+                    <div class="logo">
+                        <img src="./Img/2-removebg-preview.png" alt="logo">
+                    </div>
+                
+                    <div class="secondary-logo">
+                        <img src="./Img/3-removebg-preview.png" alt="logo1">
+                    </div>
+                </div>
+            </section>
+
+            <nav class="navbar">
+                <div class="toggle-btn" onclick="toggleNavbar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links" id="navLinks">
+                <a href="./Home.html">Home</a>
+                <a href="./aboutUs.html">About Us</a>
+                <a href="./contactUs.html">Contact Us</a>
+                </div>
+            </nav>
+        </section>
+
+        <!--Home section start here-->
+        <section class="sub-nav">
+            <div class="Avahaan1">
+                <div class="magazine1">
+                    <a href="sutra.html">व्यवस्थापनातील सूत्र</a>
+                    <a href="manogat.html">मनोगत</a>
+                    <a href="startup.html">स्टार्टअप विचार</a>
+                    <a href="aanya.html">आज्ञापत्र</a>
+                    <a href="vishesh.html">विशेष लेख</a>
+                    <a href="yashasviudyojak.html"> यशस्वी उद्योजक</a>
+                    <a href="aadhunik.html">आधुनिक उपकरणे आणि आपण</a>
+                    <a href="vyavsthapna.html">व्यवस्थापनातील छोटासा बदल</a>
+                    <a href="sihavlokan.html">सिंहावलोकन</a>
+                    <a href="sad.html">साद-प्रतिसाद</a>
+                    <a href="shevtchapan.html">शेवटचा पान वहीचं</a>
+                </div>
+
+                <div class="udyogparv">
+                    <div class="parv">
+                        <h1 id="box">पुस्तकपरिचय</h1>
+                    </div>
+
+                    <div class="gallery-container">
+                        <!-- Left Column -->
+                        <div class="flex-md-column-reverse">
+                        <h2>English book names:</h2>
+                        <div class="preview-container" onclick="openPDF('https://apex.oracle.com/pls/apex/lonestar/r/files/static/v13Y/Think-And-Grow-Rich_2011-06.pdf')">
+                            <h3>1. Think and Grow Rich</h3>
+                            <p>Author: Napoleon Hill</p>
+                            <img src="Img/Think-and-go-rich.jpg" id="pdf-image-1" class="preview-img" alt="Loading..." />
+                            <div class="label">Click to view full PDF</div>
+                        </div>
+
+                        <div class="preview-container" onclick="openPDF('https://www.twodscapital.in/files/Rich-Dad-Poor-Dad-eBook.pdf')">
+                            <h3>2. Rich Dad Poor Dad</h3>
+                            <p>Author: Robert Kiyosaki</p>
+                            <img src="Img/Rich-dad-poor-dad.jpg" id="pdf-image-2" class="preview-img" alt="Loading..." />
+                            <div class="label">Click to view full PDF</div>
+                        </div>
+
+                        <div class="preview-container" onclick="openPDF('https://morfene.com/021.pdf')">
+                            <h3>3. Zero to One</h3>
+                            <p>Author: Peter Thiel</p>
+                            <img src="Img/zero-to-one.jpg" id="pdf-image-3" class="preview-img" alt="Loading..." />
+                            <div class="label">Click to view full PDF</div>
+                        </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="flex-md-column-reverse">
+                        <h2>मराठी पुस्तकांची नावे:</h2>
+                        <div class="preview-container" onclick="openPDF('https://rltsc.edu.in/wp-content/uploads/2020/10/%E0%A4%85%E0%A4%97%E0%A5%8D%E0%A4%A8%E0%A4%BF%E0%A4%AA%E0%A4%82%E0%A4%96-%E0%A4%8F.-%E0%A4%AA%E0%A5%80.-%E0%A4%9C%E0%A5%87.-%E0%A4%85%E0%A4%AC%E0%A5%8D%E0%A4%A6%E0%A5%81%E0%A4%B2-%E0%A4%95%E0%A4%B2%E0%A4%BE%E0%A4%AE-.pdf')">
+                            <h3>1.अग्निपंख</h3>
+                            <p>लेखक: डॉ. ए.पी.जे. अब्दुल कलाम </p>
+                            <img src="Img/aagnipankha.jpg" id="pdf-image-4" class="preview-img" alt="Loading..." />
+                            <div class="label">Click to view full PDF</div>
+                        </div>
+
+                        <div class="preview-container" onclick="openPDF('https://www.esahity.com/uploads/5/0/1/2/501218/shyamachi_aai.pdf')">
+                            <h3>2.श्यामची आई</h3>
+                            <p>लेखक: साने गुरुजी</p>
+                            <img src="Img/shamchiAai.jpg" id="pdf-image-5" class="preview-img" alt="Loading..." />
+                            <div class="label">Click to view full PDF</div>
+                        </div>
+
+                        <div class="preview-container" onclick="openPDF('file:///C:/Users/MMCL-37/Downloads/Guru-Shishya-Marathi.pdf')">
+                            <h3>3. गुरू-शिष्य </h3>
+                            <p>लेखक: दादा भगवान कथित</p>
+                            <img src="Img/guru-shishaya.jpg" id="pdf-image-6" class="preview-img" alt="Loading..." />
+                            <div class="label">Click to view full PDF</div>
+                        </div>
+                        </div>
+                    </div>
+
+                 </div>
+
+                
+                <div class="AM2">
+                    <a href="./udyogibharari.html">उद्योगभरारी</a>
+                    <a href="./yashvant.html">यशवंत</a>
+                    <a href="./aajchaAI.html">AI प्रणाली / Article</a>
+                    <a href="./AI-articles.html">AI Video</a>
+                    <a href="./sidhant.html">सिद्धांत</a>
+                    <a href="./udyojika.html">उमेद उद्योगिनी</a>
+                    <a href="./udyogparv.html">पुस्तकपरिचय </a>
+                    <a href="./gbn.html">GBN आर्काईव्ह</a>
+                    <a href="./prerna.html">प्रेरणा </a>
+                    <a href="./atithi.html">अतिथी</a>
+                </div>
+            </div>
+        </section>
+        
+        <!--Footer section start here-->
+    <footer class="footer">
+    <div class="footer-content">
+        <p>Copyright All Rights Reserved for Avhaan.</p>
+
+        <nav class="footer-nav">
+        <a href="Home.html">Home</a> |
+        <a href="aboutUs.html">About Us</a> |
+        <a href="contactUs.html">Contact Us</a> 
+        </nav>
+
+        <div class="social-icons">
+            <span>Follow us:</span>
+            <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    function openPDF(url) {
+      window.open(url, '_blank');
+    }
+
+    function renderPDFPreview(pdfUrl, imageId) {
+      const loadingTask = pdfjsLib.getDocument(pdfUrl);
+      loadingTask.promise.then(pdf => pdf.getPage(1)).then(page => {
+        const scale = 1.5;
+        const viewport = page.getViewport({ scale });
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        const renderContext = {
+          canvasContext: context,
+          viewport: viewport
+        };
+
+        return page.render(renderContext).promise.then(() => {
+          const imageData = canvas.toDataURL();
+          document.getElementById(imageId).src = imageData;
+        });
+      }).catch(error => {
+        console.error(`Error rendering ${imageId}:`, error);
+        document.getElementById(imageId).alt = "Preview not available";
+      });
+    }
+
+    // Load previews
+    renderPDFPreview('https://apex.oracle.com/pls/apex/lonestar/r/files/static/v13Y/Think-And-Grow-Rich_2011-06.pdf', 'pdf-image-1');
+    renderPDFPreview('https://www.twodscapital.in/files/Rich-Dad-Poor-Dad-eBook.pdf', 'pdf-image-2');
+    renderPDFPreview('https://morfene.com/021.pdf', 'pdf-image-3');
+    renderPDFPreview('https://rltsc.edu.in/wp-content/uploads/2020/10/%E0%A4%85%E0%A4%97%E0%A5%8D%E0%A4%A8%E0%A4%BF%E0%A4%AA%E0%A4%82%E0%A4%96-%E0%A4%8F.-%E0%A4%AA%E0%A5%80.-%E0%A4%9C%E0%A5%87.-%E0%A4%85%E0%A4%AC%E0%A5%8D%E0%A4%A6%E0%A5%81%E0%A4%B2-%E0%A4%95%E0%A4%B2%E0%A4%BE%E0%A4%AE-.pdf', 'pdf-image-4');
+    renderPDFPreview('https://www.esahity.com/uploads/5/0/1/2/501218/shyamachi_aai.pdff', 'pdf-image-5');
+    renderPDFPreview('file:///C:/Users/MMCL-37/Downloads/Guru-Shishya-Marathi.pdf', 'pdf-image-6');
+  </script>
+    </body>
+</html>
